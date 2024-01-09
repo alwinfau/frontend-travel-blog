@@ -1,0 +1,335 @@
+// menggunakan modul Sass
+@import './colors';
+@import './buttons';
+@import './typo';
+@import './card';
+
+body{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-vlog{
+    padding-top: 30px;
+    .navbar-nav{
+        li{
+            padding-left: 40px;
+        }
+        .active{
+            color: $purpell !important;
+            font-weight: map-get($fontWeights , medium) !important; //Cara memanggil dan menggunakan map get pada Sass
+        }
+        .nav-link{
+            color: $navi;
+            font-weight: map-get($fontWeights, regular);
+        }
+    }
+}
+
+
+// Seaction Untuk Sales
+.sales{
+    padding-top: 100px;
+    .copywriting{
+        padding-left: 100px;
+        .header{
+            font-weight: map-get($fontWeights , semibold);
+            font-size: 46px ;
+            line-height: 60px;
+            margin-top: 100px;
+            span{
+                color: $pink;
+            }
+        }
+
+        .description{
+            margin: 0px 20px 40px 0px;
+            color: $newpur;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: map-get($fontWeights, regular);
+        }
+    }
+
+    .brands{
+        margin-top: 10px;
+        text-align: center;
+        .partner{
+            width: 800px;
+        }
+    }
+}
+
+// section untuk service
+.service{
+    background-color: $lilpur;
+    padding: 70px 0 70px 0px;
+    margin-top: 20px;
+    .header{
+        span{
+            color: $pink;
+            font-size: 23px;
+            font-weight: map-get($fontWeights, regular);
+        }
+    }
+
+    .description{
+        font-size: 44px;
+        font-weight: map-get($fontWeights, semibold );
+    }
+
+    .list{
+        display: flex;
+        .card{
+            @extend .card-master;
+            margin-right: 40px;
+            border: dashed 1px $medpur;
+            padding: 44px 20px 20px 14px;
+            max-width: 230px;
+            height: 330px;
+        }
+        .card:hover{
+            @extend .card-master;
+            border-color: $purpell;
+        }
+    
+        .active{
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+        }
+    
+        .active:hover{
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+            background-color: $purpell;
+            color: $white;
+            border-color: $white;
+            transition: all ease-in .4s;
+        }
+    
+        .title_card{
+            font-size: 18px;
+            margin: 44px 0 32px 0px;
+        }
+    
+        .description_card{
+            color: $newpur;
+            font-size: 14px;
+            font-weight: map-get($fontWeights, regular);
+        }
+
+    }
+}
+
+// sectioin untuk TOP DESTINATION
+.destination{
+    padding: 70px 0px 50px 0px;
+    background-color: $white;
+    .header{
+        color: $pink;
+        font-size: 23px;
+        font-weight: map-get($fontWeights , regular);
+        span{
+            font-weight: map-get($fontWeights, semibold );
+            font-size: 35px;
+            color: $hitam;
+        }
+    }
+
+    .icon{
+        color: $sofpur;
+        font-size: 50px;
+    }
+    
+    .active{
+        color: $purpell;
+        font-size: 50px;
+    }
+
+    .card{
+        @extend .card-master;
+        border: 0;
+        margin:50px 0px 20px 15px;
+        box-shadow: 0px 0px 30px 0px rgba(177, 177, 177, 0.2);
+        height: 450px;
+        transition: transform ease-in .2s;
+        img{
+            border-radius: 20px 20px 0px 0px;
+        }
+        
+        p{
+            display: flex;
+            font-size: 18px;
+            font-weight: map-get($fontWeights, medium);
+            span{
+                color: $pink;
+            }
+        }
+
+        .description{
+            color: $newpur;
+            font-size: 16px;
+            font-weight: map-get($fontWeights, regular);
+            text-overflow: ellipsis;
+        }
+    }
+
+    .card:hover{
+        border: dashed 1px $purpell;
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+    }
+}
+
+// section untuk POINT
+.point{
+    .container-fluid{
+        padding: 0;
+        margin: 0px;
+        .header{
+            // margin: 70px 0px 20px 0px;
+            margin-top: 100px;
+            color: $pink;
+            font-size: 23px;
+        }
+        span{
+            line-height: 40px;
+            font-size: 40px;
+            font-weight: map-get($fontWeights, medium);
+        }
+        .description{
+            color: $newpur;
+            margin: 20px 100px 0px 0px;
+        }
+
+        .point-list{
+            margin: 20px 100px 0px 0px;
+            .card{
+                @extend .card-master;
+                margin: 10px;
+                border: dashed 1px $sofpur;
+                .item-point{
+                    color: $orange;
+                    font-size: 30px;
+                    padding: 0;
+                    margin: 0;
+                }
+                span{
+                    color: $hitam;
+                    font-size: 15px;
+                    font-weight: map-get($fontWeights, regular);
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// section untuk future
+.future{
+    margin-top: 70px;
+    .header{
+        color: $pink;
+        font-size: 30px;
+        span{
+            color: $hitam;
+            font-size: 44px;
+            font-weight: map-get($fontWeights, semibold);
+        }
+    }
+    .future-desc{
+        color: $newpur;
+        font-weight: map-get($fontWeights, regular);
+    }
+
+    .card{
+        @extend .card-master;
+        border: 0;
+        margin-top: 30px;
+        .card-body{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+
+            p{
+                color: $hitam;
+                font-size: 18px;
+                font-weight: map-get($fontWeights, medium);
+                line-height: 20px;
+                span{
+                    font-size: 12px;
+                    color: $newpur;
+                    font-weight: map-get($fontWeights, regular);
+                    
+                }
+            }
+        }
+    }
+
+    .active{
+        border: dashed 1px $newpur;
+    }
+}
+
+// section untuk testimonial
+.testimonial{
+    padding: 60px 0px 60px 0px;
+    .container{
+        .header{
+            color: $pink;
+            font-size: 23px;
+            span{
+                color: $hitam;
+                font-size: 44px;
+                font-weight: map-get($fontWeights, medium);
+            }
+        }
+
+        .card{
+            @extend .card-master;
+            width: 300px;
+            height: 300px;
+            margin: 15px;
+            border: dashed 1px $newpur;
+            display: inline-table;
+            overflow: hidden;
+            img{
+                margin-top: 30px;
+            }
+            .card-body{
+                text-align: center;
+                .name{
+                    color: $pink;
+                    font-size: 17px;
+                }
+                .comment{
+                    color: $newpur;
+                    font-size: 14px;
+                    font-weight: map-get($fontWeights, regular);
+                }
+                .ratings{
+                    color: $yellow;
+                    font-weight: map-get($fontWeights, regular );
+                }
+            }
+        }
+    }
+}
+
+.container-fluid{
+    background-color: $lilpur;
+    padding: 0;
+    margin: 0;
+    .container{
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 30px 0px 0px 30px;
+        color: $purpell;
+    }
+}

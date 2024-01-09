@@ -1,0 +1,8 @@
+@import './colors';
+@import './typo';
+
+// deklarasi card untuk bisa di panggil dan digunakan di banyak tempat
+.card-master{
+    border-radius: 20px;
+    font-weight: map-get($fontWeights , semibold);
+}

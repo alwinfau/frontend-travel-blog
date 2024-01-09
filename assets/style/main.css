@@ -1,0 +1,336 @@
+.button-master, .btn-login:hover, .btn-login, .btn-secondary:hover, .btn-secondary, .btn-warning, .btn-primary {
+  padding: 13px 26px 13px 26px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4528c4;
+  border: 0;
+}
+
+.btn-warning {
+  color: #777790;
+  background-color: #eaeaf4;
+  border: 0;
+}
+
+.btn-secondary {
+  color: #777790;
+  background-color: #eaeaf4;
+  border: 0;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #F85E9F;
+  border: 0;
+  font-weight: 500;
+  border: dashed 2px solid #4528c4;
+}
+
+.btn-login {
+  color: #fff;
+  background-color: #4528c4;
+  border: 0;
+}
+
+.btn-login:hover {
+  color: #fff;
+  background-color: #563AD6;
+  border: 0;
+}
+
+.card-master, .testimonial .container .card, .future .card, .point .container-fluid .point-list .card, .destination .card, .service .list .card:hover, .service .list .card {
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-vlog {
+  padding-top: 30px;
+}
+.navbar-vlog .navbar-nav li {
+  padding-left: 40px;
+}
+.navbar-vlog .navbar-nav .active {
+  color: #4528c4 !important;
+  font-weight: 500 !important;
+}
+.navbar-vlog .navbar-nav .nav-link {
+  color: #02044a;
+  font-weight: 400;
+}
+
+.sales {
+  padding-top: 100px;
+}
+.sales .copywriting {
+  padding-left: 100px;
+}
+.sales .copywriting .header {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 60px;
+  margin-top: 100px;
+}
+.sales .copywriting .header span {
+  color: #F85E9F;
+}
+.sales .copywriting .description {
+  margin: 0px 20px 40px 0px;
+  color: #9b9cb7;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.sales .brands {
+  margin-top: 10px;
+  text-align: center;
+}
+.sales .brands .partner {
+  width: 800px;
+}
+
+.service {
+  background-color: #f9f9fb;
+  padding: 70px 0 70px 0px;
+  margin-top: 20px;
+}
+.service .header span {
+  color: #F85E9F;
+  font-size: 23px;
+  font-weight: 400;
+}
+.service .description {
+  font-size: 44px;
+  font-weight: 600;
+}
+.service .list {
+  display: flex;
+}
+.service .list .card {
+  margin-right: 40px;
+  border: dashed 1px #b4b5c9;
+  padding: 44px 20px 20px 14px;
+  max-width: 230px;
+  height: 330px;
+}
+.service .list .card:hover {
+  border-color: #4528c4;
+}
+.service .list .active {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+}
+.service .list .active:hover {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+  background-color: #4528c4;
+  color: #fff;
+  border-color: #fff;
+  transition: all ease-in 0.4s;
+}
+.service .list .title_card {
+  font-size: 18px;
+  margin: 44px 0 32px 0px;
+}
+.service .list .description_card {
+  color: #9b9cb7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.destination {
+  padding: 70px 0px 50px 0px;
+  background-color: #fff;
+}
+.destination .header {
+  color: #F85E9F;
+  font-size: 23px;
+  font-weight: 400;
+}
+.destination .header span {
+  font-weight: 600;
+  font-size: 35px;
+  color: #000;
+}
+.destination .icon {
+  color: #eaeaf4;
+  font-size: 50px;
+}
+.destination .active {
+  color: #4528c4;
+  font-size: 50px;
+}
+.destination .card {
+  border: 0;
+  margin: 50px 0px 20px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(177, 177, 177, 0.2);
+  height: 450px;
+  transition: transform ease-in 0.2s;
+}
+.destination .card img {
+  border-radius: 20px 20px 0px 0px;
+}
+.destination .card p {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+.destination .card p span {
+  color: #F85E9F;
+}
+.destination .card .description {
+  color: #9b9cb7;
+  font-size: 16px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+.destination .card:hover {
+  border: dashed 1px #4528c4;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+
+.point .container-fluid {
+  padding: 0;
+  margin: 0px;
+}
+.point .container-fluid .header {
+  margin-top: 100px;
+  color: #F85E9F;
+  font-size: 23px;
+}
+.point .container-fluid span {
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.point .container-fluid .description {
+  color: #9b9cb7;
+  margin: 20px 100px 0px 0px;
+}
+.point .container-fluid .point-list {
+  margin: 20px 100px 0px 0px;
+}
+.point .container-fluid .point-list .card {
+  margin: 10px;
+  border: dashed 1px #eaeaf4;
+}
+.point .container-fluid .point-list .card .item-point {
+  color: #FF5722;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+.point .container-fluid .point-list .card span {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.future {
+  margin-top: 70px;
+}
+.future .header {
+  color: #F85E9F;
+  font-size: 30px;
+}
+.future .header span {
+  color: #000;
+  font-size: 44px;
+  font-weight: 600;
+}
+.future .future-desc {
+  color: #9b9cb7;
+  font-weight: 400;
+}
+.future .card {
+  border: 0;
+  margin-top: 30px;
+}
+.future .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.future .card .card-body img {
+  margin-right: 10px;
+}
+.future .card .card-body p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.future .card .card-body p span {
+  font-size: 12px;
+  color: #9b9cb7;
+  font-weight: 400;
+}
+.future .active {
+  border: dashed 1px #9b9cb7;
+}
+
+.testimonial {
+  padding: 60px 0px 60px 0px;
+}
+.testimonial .container .header {
+  color: #F85E9F;
+  font-size: 23px;
+}
+.testimonial .container .header span {
+  color: #000;
+  font-size: 44px;
+  font-weight: 500;
+}
+.testimonial .container .card {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  border: dashed 1px #9b9cb7;
+  display: inline-table;
+  overflow: hidden;
+}
+.testimonial .container .card img {
+  margin-top: 30px;
+}
+.testimonial .container .card .card-body {
+  text-align: center;
+}
+.testimonial .container .card .card-body .name {
+  color: #F85E9F;
+  font-size: 17px;
+}
+.testimonial .container .card .card-body .comment {
+  color: #9b9cb7;
+  font-size: 14px;
+  font-weight: 400;
+}
+.testimonial .container .card .card-body .ratings {
+  color: rgb(238, 202, 22);
+  font-weight: 400;
+}
+
+.container-fluid {
+  background-color: #f9f9fb;
+  padding: 0;
+  margin: 0;
+}
+.container-fluid .container {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 30px 0px 0px 30px;
+  color: #4528c4;
+}/*# sourceMappingURL=main.css.map */

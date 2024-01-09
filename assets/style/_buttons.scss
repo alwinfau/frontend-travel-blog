@@ -1,0 +1,54 @@
+@import './colors';
+@import './typo';
+
+// Deklarasi button untuk semua tombol yang digunakan dalam halaman web dengan menggunakan fungsi EXTEND Sass
+.button-master{
+    padding: 13px 26px 13px 26px;
+    border-radius: 20px;
+    font-weight: map-get($fontWeights , semibold);
+}
+
+.btn-primary{
+    @extend .button-master;
+    color: $white;
+    background-color: $purpell;
+    border: 0;
+}
+
+.btn-warning{
+    @extend .button-master;
+    color: $darpur;
+    background-color: $sofpur;
+    border: 0;
+}
+
+.btn-secondary{
+    @extend .button-master;
+    color: $darpur;
+    background-color: $sofpur;
+    border: 0;
+    font-weight: map-get($fontWeights, medium);
+}
+
+
+.btn-secondary:hover{
+    @extend .button-master;
+    color: $white;
+    background-color: $pink;
+    border: 0;
+    font-weight: map-get($fontWeights, medium);
+    border: dashed 2px solid $purpell;
+}
+
+.btn-login{
+    @extend .button-master;
+    color: $white;
+    background-color: $purpell;
+    border: 0;
+}
+.btn-login:hover{
+    @extend .button-master;
+    color: $white;
+    background-color: $newpurpell;
+    border: 0;
+}
